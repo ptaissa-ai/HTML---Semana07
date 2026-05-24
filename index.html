@@ -29,8 +29,8 @@
         <h1>Bem-vindo ao portal acadêmico</h1>
 
         <p>
-          Esta aplicação foi desenvolvida com HTML5 e CSS, mantendo os elementos das semanas anteriores
-          e aplicando propriedades de Grid Layout na página inicial.
+          Esta aplicação foi desenvolvida com HTML5, CSS e JavaScript, mantendo os elementos das semanas anteriores
+          e adicionando um SlideShow à página inicial.
         </p>
 
         <div class="hero-botoes">
@@ -41,6 +41,48 @@
 
       <div class="hero-imagem">
         <img src="Logo.jpg" alt="Instituto Federal de São Paulo" class="logo-hero">
+      </div>
+    </section>
+
+    <!-- SLIDESHOW - SEMANA 09 -->
+    <section class="secao">
+      <h2>Destaques do IFSP</h2>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numero-slide">1 / 4</div>
+          <img src="A.png" alt="Imagem institucional do IFSP">
+          <div class="texto-slide">Conheça as atividades do IFSP Câmpus Pirituba</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numero-slide">2 / 4</div>
+          <img src="B.jpg" alt="Imagem do câmpus">
+          <div class="texto-slide">Cursos, eventos e oportunidades acadêmicas</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numero-slide">3 / 4</div>
+          <img src="C.jpg" alt="Estudantes e atividades acadêmicas">
+          <div class="texto-slide">Participe das ações desenvolvidas no câmpus</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numero-slide">4 / 4</div>
+          <img src="snct.jpg" alt="Semana Nacional de Ciência e Tecnologia">
+          <div class="texto-slide">Semana Nacional de Ciência e Tecnologia</div>
+        </div>
+
+        <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div class="bolinhas-container">
+        <span class="bolinha" onclick="currentSlide(1)"></span>
+        <span class="bolinha" onclick="currentSlide(2)"></span>
+        <span class="bolinha" onclick="currentSlide(3)"></span>
+        <span class="bolinha" onclick="currentSlide(4)"></span>
       </div>
     </section>
 
@@ -164,8 +206,9 @@
 
   <footer class="rodape-site">
     <p><strong>INSTITUTO FEDERAL DE SÃO PAULO - CÂMPUS PIRITUBA</strong></p>
-    <p>Aplicação desenvolvida para a Semana 07 com CSS Grid Layout</p>
+    <p>Aplicação desenvolvida para a Semana 09 com SlideShow em JavaScript</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
